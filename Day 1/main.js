@@ -1,0 +1,11 @@
+var a=69;
+var b=23;
+module.exports={a,b};
+const add=require("./add");
+const sub=require("./subtract");
+const multi=require("./multiply");
+const div=require("./divide");
+add;
+sub;
+multi;
+div;
