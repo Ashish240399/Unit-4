@@ -1,6 +1,7 @@
 const express=require("express");
 const mongoose=require("mongoose");
 const app=express();
+app.use(express.json())
 const connect=()=>{
     return mongoose.connect("mongodb+srv://Ashish7797:Ashish7797@cluster0.3get3.mongodb.net/eval?retryWrites=true&w=majority")
 }
@@ -130,7 +131,7 @@ app.get("/master/:masterId/user",async(req,res)=>{
         console.log(error)
     }
 });
-app.listen(5001,async()=>{
+app.listen(2002,async()=>{
     try {
         await connect();
     } catch (error) {
