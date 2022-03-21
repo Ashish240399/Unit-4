@@ -5,6 +5,7 @@ const userSchema=mongoose.Schema({
     age:{type:Number,require:true},
     email:{type:String,require:true,unique:true},
     profileImage:{type:String,require:true},
+    password:{type:String,required:true}
 
 },{
     timestamps:true,
